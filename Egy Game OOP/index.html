@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Egy OOP Game</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="/images/logo.png" type="image/x-icon" />
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300..1000&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+    <div class="page">
+        <!-- start home -->
+        <section class="home px-2 min-vh-100">
+            <span class="arrow-up xy-center text-white bg-blu rounded-circle position-fixed"
+                style="width: 40px; height: 40px;">
+                <i class="fa-solid fa-arrow-up up"></i>
+            </span>
+            <!-- start nav -->
+            <nav class="navbar navbar-expand-lg navbar-dark position-sticky top-0">
+                <div class="container bg-blu py-2 rounded-4 shadow">
+                    <div class="logo">
+                        <img src="images/logo.png" style="width: 50px;" alt="">
+                        <a class="navbar-brand d-inline-block align-middle fst-italic position-relative"
+                            href="index.html">GAME
+                            REVIEWS</a>
+                    </div>
+                    <button class="navbar-toggler text-gray fs-3 collapsed" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 text-uppercase pt-3 pt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#" data-genre="mmorpg">mmorpg</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-genre="shooter">shooter</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-genre="sailing">sailing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-genre="permadeath">permadeath</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-genre="superhero">superhero</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" data-genre="pixel">pixel</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- end nav -->
+
+            <!-- start games -->
+            <div class="games py-5">
+                <div class="container">
+                    <div class="row g-4">
+                        <div class="loading_scr position-fixed w-100 h-100 xy-center m-0">
+                            <div class="wrapper position-relative">
+                                <div class="red rounded-circle xy-center border border-5 border-start-0 border-bottom-0 border-end-0 border-danger"
+                                    style="width: 100px; height: 100px;">
+                                </div>
+                                <div class="white z-3 position-absolute  rounded-circle border border-5 border-start-0 border-top-0 border-end-0 border-white"
+                                    style="width: 95px; height: 95px;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- end games -->
+        </section>
+        <!-- end home -->
+
+        <!-- start details -->
+        <section
+            class="details bg-gray text-white position-fixed opacity-0 rounded-circle py-0 px-0 overflow-hidden ">
+            <div class="container opacity-0">
+
+            </div>
+        </section>
+        <!-- end details -->
+    </div>
+
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js" type="module"></script>
+
+</body>
+
+</html>

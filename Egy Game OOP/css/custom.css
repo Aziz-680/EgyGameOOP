@@ -1,0 +1,67 @@
+* {
+    font-family: "Recursive", sans-serif;
+}
+
+.w-fit {
+    width: fit-content;
+}
+
+.xy-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.no-decoration {
+    text-decoration: none;
+}
+
+.bg-blu {
+    background-color: #3A497B !important;
+}
+
+.bg-gray {
+    background-color: #272B30 !important;
+}
+
+.text-blu {
+    color: rgb(0, 153, 204) !important;
+}
+
+.text-gray {
+    color: #272B30 !important;
+}
+
+.loading_scr {
+    --loading-alpha: 100%;
+    background-color: rgba(39, 43, 48, var(--loading-alpha));
+    top: 0;
+    left: 0;
+    z-index: 9999;
+}
+
+.loading_scr .red {
+    animation: loading-red;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+.loading_scr .white {
+    animation-name: loading-white;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    top: 5px;
+    left: 2.5px;
+}
+
+@keyframes loading_scr-red {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes loading_scr-white {
+    100% {
+        transform: rotate(-360deg);
+    }
+}
